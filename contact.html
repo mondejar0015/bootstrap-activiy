@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 20px;
+        background-image: url(nice\ background.gif);
+        background-size: cover;
+      }
+      .navbar {
+        background-color: #007bff; 
+      }
+      .navbar-brand {
+        display: flex;
+        align-items: center;
+      }
+      .navbar-brand img {
+        width: 40px; 
+        height: auto;
+        margin-right: 10px; 
+      }
+      .navbar-brand {
+        padding-top: var(--bs-navbar-brand-padding-y);
+        padding-bottom: var(--bs-navbar-brand-padding-y);
+        margin-right: var(--bs-navbar-brand-margin-end);
+        font-size: var(--bs-navbar-brand-font-size);
+        color: rgb(255 255 255);
+        text-decoration: none;
+        white-space: nowrap;
+      }
+      .container {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        max-width: 450px;
+        margin: 30px auto; 
+        backdrop-filter: blur(10px);
+        background-image: url(back\ pic1.jpg);
+        background-size: cover;
+      }
+      h1 {
+        margin-bottom: 20px;
+        color: #ffffff; 
+        text-align: center;
+        font-size: 24px;
+      }
+      label {
+        display: block;
+        margin: 10px 0 5px;
+        color: #ffffff;
+      }
+      input,
+      textarea {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+        transition: border 0.3s;
+        box-sizing: border-box;
+      }
+      input:focus,
+      textarea:focus {
+        border-color: #007bff;
+        outline: none;
+      }
+      button {
+        padding: 12px;
+        background-color: #28a745; 
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+        width: 100%;
+        font-weight: bold;
+      }
+      button:hover {
+        background-color: #218838; 
+      }
+      footer {
+        text-align: center;
+        margin-top: 20px;
+        color: #ffffff; 
+        font-size: 12px;
+      }
+      .bg-light {
+        --bs-bg-opacity: 1;
+        background-color: rgb(146 255 150 / 32%) !important;
+        border-radius: 10px;
+      }
+      .btn-outline-success {
+        --bs-btn-color: #ffffff;
+        --bs-btn-border-color: #000000;
+        --bs-btn-hover-color: #fff;
+        --bs-btn-hover-bg: #198754;
+        --bs-btn-hover-border-color: #198754;
+        --bs-btn-focus-shadow-rgb: 25, 135, 84;
+        --bs-btn-active-color: #fff;
+        --bs-btn-active-bg: #198754;
+        --bs-btn-active-border-color: #198754;
+        --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        --bs-btn-disabled-color: #198754;
+        --bs-btn-disabled-bg: transparent;
+        --bs-btn-disabled-border-color: #198754;
+        --bs-gradient: none;
+      }
+      .nav-link {
+        display: block;
+        padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+        font-size: var(--bs-nav-link-font-size);
+        font-weight: var(--bs-nav-link-font-weight);
+        color: rgb(255 255 255 / 65%);
+        text-decoration: none;
+        background: 0 0;
+        border: 0;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+          border-color 0.15s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="navbar logo2.jpg" alt="Logo" />
+          TreeOfLife
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1>Contact Us</h1>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="from_name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+      <footer>
+        Eric Charls M. Mondejar | 10/03/24<br />
+        <a href="privacy.html" style="color: #007bff">Privacy Policy</a>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Initialize EmailJS with your user ID
+      (function () {
+        emailjs.init("mRIYsGt5vGO_Tud1H");
+      })();
+
+      // Function to send email using EmailJS
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          emailjs.sendForm("service_fitdz5i", "template_v53q9bi", this).then(
+            function () {
+              alert("Message Sent Successfully!");
+            },
+            function (error) {
+              alert("Failed to send the message: " + JSON.stringify(error));
+            }
+          );
+        });
+    </script>
+  </body>
+</html>
