@@ -1,171 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Me</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <style>
-      body {
-        background-color: #e8f5ec;
-        background-image: url(nice\ background.gif);
-        background-size: cover;
-        background-repeat: no-repeat;
-        color: #333;
-        min-height: 100vh;
-      }
+        body {
+            background-color: #e8f5ec;
+            background-image: url(nice/background.gif);
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #333;
+            min-height: 100vh;
+        }
 
-      .navbar {
-        background-color: rgba(34, 85, 34, 0.85);
-        border-radius: 8px;
-      }
+        .navbar {
+            background-color: rgba(34, 85, 34, 0.85);
+            border-radius: 8px;
+        }
 
-      .navbar-brand {
-        display: flex;
-        align-items: center;
-        padding: 0;
-        color: #b2e7bd;
-        text-decoration: none;
-        font-weight: bold;
-      }
+        .navbar-brand {
+            color: #b2e7bd;
+        }
 
-      .navbar-brand img {
-        height: 40px;
-        width: auto;
-        margin-right: 10px;
-      }
+        .nav-link {
+            color: #b2e7bd !important;
+        }
 
-      .nav-link {
-        color: #b2e7bd !important;
-      }
+        .nav-link:hover {
+            color: #d7f9e5 !important;
+        }
 
-      .nav-link:hover {
-        color: #d7f9e5 !important;
-      }
+        .content-wrapper {
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 40px;
+            border-radius: 20px;
+            color: #333;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
 
-      .container {
-        max-width: 600px;
-        padding: 50px 20px;
-        margin: 0 auto;
-        text-align: center;
-      }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #333;
+        }
 
-      .content-wrapper {
-        background-color: rgba(255, 255, 255, 0.85);
-        padding: 40px;
-        border-radius: 20px;
-        color: #333;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      }
+        p {
+            margin: 20px 0;
+            font-size: 1.1em;
+            color: #555;
+        }
 
-      h1 {
-        font-size: 3em;
-        margin-bottom: 10px;
-        color: #333;
-      }
+        .profile-img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 20px;
+        }
 
-      p {
-        margin: 20px 0;
-        font-size: 1.1em;
-        color: #555;
-      }
+        .section-title {
+            margin-top: 40px;
+            font-size: 2em;
+            color: #4CAF50;
+        }
 
-      .form-control {
-        border-radius: 20px;
-        border-color: #b2e7bd;
-        background-color: rgba(178, 231, 189, 0.1);
-      }
+        .contact-info {
+            font-size: 1.1em;
+        }
 
-      .btn-outline-success {
-        border-radius: 20px;
-        color: #b2e7bd;
-        border-color: #b2e7bd;
-      }
+        .social-icons a {
+            color: #56c58b;
+            margin: 0 10px;
+            font-size: 1.5em;
+            transition: transform 0.3s, color 0.3s;
+        }
 
-      .btn-outline-success:hover {
-        background-color: #b2e7bd;
-        color: #224422;
-      }
+        .social-icons a:hover {
+            transform: scale(1.2);
+            color: #d7f9e5;
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-sm navbar-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img
-            src="navbar logo2.jpg"
-            alt="Logo"
-            class="d-inline-block align-text-top"
-          />
-          TreeOfLife
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="aboutme.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="navbar logo2.jpg" alt="Logo" class="d-inline-block align-text-top" height="40" />
+                TreeOfLife
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-          </form>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutme.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
         </div>
-      </div>
     </nav>
 
     <!-- About Me Section -->
-    <div class="container">
-      <div class="content-wrapper">
-        <h1>About Me</h1>
-        <p>
-          I'm Eric Charls M. Mondejar, a passionate 19-year-old sophomore
-          studying Bachelor of Science in Information Technology. My journey
-          into the world of technology started at a young age, fueled by a love
-          for solving problems and creating innovative solutions. I enjoy
-          exploring new technologies and continuously seek to expand my skill
-          set in areas like programming, data analysis, and web development.
-        </p>
-        <p>
-          In my free time, I love to engage in personal projects that allow me
-          to apply what I've learned, whether it's building websites or
-          experimenting with code. I'm a firm believer in lifelong learning and
-          am excited to see where this journey takes me.
-        </p>
-        <p>
-          Feel free to connect with me on social media or reach out via my
-          contact information!
-        </p>
-      </div>
+    <div class="container my-5">
+        <div class="content-wrapper">
+            <h1>About Me</h1>
+            <img src="your_profile_picture.jpg" alt="Eric Charls M. Mondejar" class="profile-img" />
+            <p>
+                I'm Eric Charls M. Mondejar, a passionate 19-year-old sophomore studying Bachelor of Science in Information Technology. My journey into the world of technology started at a young age, fueled by a love for solving problems and creating innovative solutions. I enjoy exploring new technologies and continuously seek to expand my understanding of IT.
+            </p>
+            <p>
+                In my free time, I engage in personal projects and hobbies that allow me to apply what I've learned. I love building websites, experimenting with coding, and spending time with friends and family.
+            </p>
+            <p>
+                Feel free to connect with me on social media or reach out via my contact information!
+            </p>
+
+            <!-- Contact Information -->
+            <div class="section-title">Contact Information</div>
+            <div class="contact-info">
+                <p>Email: <a href="https://myaccount.google.com/?hl=en&utm_source=OGB&utm_medium=act&gar=WzI4MV0">mondejar0015@gmail.com</a></p>
+                <p>Phone: +639489391234</p>
+            </div>
+
+            <!-- Education Section -->
+            <div class="section-title">Education</div>
+            <p>Bachelor of Science in Information Technology</p>
+            <p>Currently enrolled at St. Peter's College, pursuing various aspects of IT including programming, data management, and cybersecurity.</p>
+
+            <!-- Hobbies Section -->
+            <div class="section-title">Hobbies</div>
+            <p>Some of my hobbies include:</p>
+            <ul class="list-unstyled">
+                <li>🎮 Gaming</li>
+                <li>📚 Reading tech blogs and novels</li>
+                <li>🌳 Hiking and exploring nature</li>
+                <li>🎨 Graphic design and art</li>
+            </ul>
+
+            <!-- Social Media Links -->
+            <div class="section-title">Connect with Me</div>
+            <div class="social-icons">
+              <a href="#" target="_blank"><i class="bi bi-twitter"></i></a>
+              <a href="https://www.facebook.com/Mondejar.0015" target="_blank"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/erickcharls/" target="_blank"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/eric-mondejar-35487b295/" target="_blank"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
     </div>
-  </body>
+</body>
 </html>
